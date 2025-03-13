@@ -12,7 +12,7 @@ public class IteratingCollection {
 		list.add(new Product(104, "Coke", 35.00F));
 		list.add(new Product(105, "Coke", 76.00F));
 		list.stream()
-		.filter(product->product.price == 35 || product.price == 18)
+		.filter(product->product.price >= 35 || product.price == 18)
 		.forEach(product-> System.out.println(product));
 	}
 }
